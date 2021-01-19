@@ -1,0 +1,276 @@
+\documentclass[11pt]{article}
+
+% To produce a letter size output. Otherwise will be A4 size.
+\usepackage[letterpaper]{geometry}
+
+% For enumerated lists using letters: a. b. etc.
+\usepackage{enumitem}
+
+\topmargin -.5in
+\textheight 9in
+\oddsidemargin -.25in
+\evensidemargin -.25in
+\textwidth 7in
+\usepackage{pifont}
+
+\begin{document}
+
+
+
+
+
+\begin{center}
+    {\Large Valentinno Cruz\\
+    Homework Assignment 1\\
+    Feb. 11th, 2021\\}
+
+\end{center}
+
+
+\begin{flushleft}
+{\Large Knowledge Representation}
+\end{flushleft}
+
+
+%========= Problem 1 .===========
+
+
+\begin{flushleft}
+{\large 1. It is not cloudy and it is not raining.}
+\end{flushleft}
+
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+Let p = It is not cloudy, and let q = it is not raining.
+Then p \land  q\\
+
+\end{itemize}
+
+
+
+
+%========= Problem 2 .===========
+
+
+\begin{flushleft}
+{\large 2. I like to eat apples and bananas..}
+\end{flushleft}
+
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+Let p = apples, and let q = bananas. 
+Then p v q \\
+
+
+
+\end{itemize}
+
+
+
+
+%========= Problem 3 .===========
+
+
+\begin{flushleft}
+{\large 3. Behind the clouds the sun is shining.}
+\end{flushleft}
+
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+Let p = behind the clouds, and let q = the sun is shinning. 
+Then p \land  q \\
+
+
+
+\end{itemize}
+
+%========= Problem 4 .===========
+
+
+\begin{flushleft}
+{\large 4. If a function is differentiable then the function is continuous..}
+\end{flushleft}
+
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+Let p = If a function is differentiable, and let q = then the function is continuous. 
+Then p \ding{222} q \\
+
+
+
+\end{itemize}
+
+
+%========= Problem 5 .===========
+
+
+\begin{flushleft}
+{\large 5.  I will study for the final otherwise I will fail..}
+\end{flushleft}
+
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+Let p = will study for the final, and let q =  I will fail   
+Then p \ding{222} q \\
+
+
+
+%=========== Part 2=============
+
+\begin{flushleft}
+{\Large Equivalence in Propositional Logic}
+\end{flushleft}
+
+%========= Problem 1 .===========
+
+
+\begin{flushleft}
+{\large 1. p \land q \hspace{.5cm}and \hspace{.5cm} p \lor \neg q}
+\end{flushleft}
+
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+
+\begin{displaymath}
+\begin{array}{|c|c|c|c|}
+A & B & C & D \\
+p & q & p \land q & p \lor \neg q\\ 
+T & T & T & T\\
+T & F & F & T\\
+F & T & F & F\\
+F & F & F & T\\
+\end{array}
+Col. C \neq Col. D
+\end{displaymath}
+\end{itemize}
+
+
+%========= Problem 2 .===========
+
+
+\begin{flushleft}
+{\large 2. p \lor \hspace{.2cm} q \hspace{.5cm} and \hspace{.5cm} \neg  p  \land \neg q}
+\end{flushleft}
+
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+
+\begin{displaymath}
+\begin{array}{|c|c|c|c|c|c|}
+A & B & C & D & E & F\\
+p & q & \neg  p & \neg q &  p \lor q &\neg p \lor \neg q\\ 
+T & T & F & F & T & F \\
+T & F & F & T & T & T\\
+F & T & T & F & T & T\\
+F & F & T & T & F & T\\
+\end{array}
+Col. E \neq Col. F
+\end{displaymath}
+
+\end{itemize}
+
+
+
+%========= Problem 3 .===========
+
+
+\begin{flushleft}
+{\large 3. p \rightarrow q \hspace{.2cm} and \hspace{.2cm} \neg p \rightarrow \neg q}\\
+\end{flushleft}
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+
+\begin{displaymath}
+\begin{array}{|c|c|c|c|c|c|}
+A & B & C & D & E & F\\
+p & q & \neg  p & \neg q &  p \longrightarrow q &\neg p \longrightarrow \neg q\\ 
+T & T & F & F & T & T \\
+T & F & F & T & F & F\\
+F & T & T & F & T & T\\
+F & F & T & T & T & T\\
+\end{array}
+Col. E = Col. F
+\end{displaymath}
+
+\end{itemize}
+
+
+
+%========= Problem 4 .===========
+
+
+\begin{flushleft}
+{\large 4. p \rightarrow q \hspace{.2cm} and \hspace{.2cm} \neg p \lor  q}
+\end{flushleft}
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+
+\begin{displaymath}
+\begin{array}{|c|c|c|c|c|c|}
+A & B & C & D & E\\
+p & q & \neg  p &  p \longrightarrow q &  \neg p \lor q \\ 
+T & T & F & T & T  \\
+T & F & F & F & F \\
+F & T & T & T & T \\
+F & F & T & T & T \\
+\end{array}
+Col. D = Col. E\\
+\end{displaymath}
+
+\end{itemize}
+
+
+
+%========= Problem 5 .===========
+
+
+\begin{flushleft}
+{\large 5. \neg (p \land q)\hspace{.2cm} and\hspace{.2cm} \neg p \lor \neg q}\\
+\end{flushleft}
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+
+\begin{displaymath}
+\begin{array}{|c|c|c|c|c|c|c|c|}
+A & B & C & D & E &F & G & H\\
+p & q & \neg  p &  \neg q & p \land q & p \lor q & \neg(p\land q) & \neg p \lor \neg q \\ 
+T & T & F & T & T & T & F & F\\
+T & F & F & F & F & T & T & F\\
+F & T & T & T & F & T & T & F\\
+F & F & T & T & F & F & T & T\\
+\end{array}
+Col. G \neq Col. H\\
+\end{displaymath}
+
+\end{itemize}
+
+\end{itemize}
+\end{document}
+
