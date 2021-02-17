@@ -1,0 +1,302 @@
+\documentclass[11pt]{article}
+\documentclass{article}
+\usepackage{amssymb}
+% To produce a letter size output. Otherwise will be A4 size.
+\usepackage[letterpaper]{geometry}
+
+% For enumerated lists using letters: a. b. etc.
+\usepackage{enumitem}
+
+\topmargin -.5in
+\textheight 9in
+\oddsidemargin -.25in
+\evensidemargin -.25in
+\textwidth 7in
+\usepackage{pifont}
+
+\begin{document}
+
+
+
+
+
+\begin{center}
+    {\Large Valentinno Cruz\\
+    Homework Assignment 2\\
+    Feb. 22nd, 2021\\}
+
+\end{center}
+
+%-----------        ----------- 
+%----------- Part 1 ----------- 
+%-----------        ----------- 
+
+
+\begin{flushleft}
+{\Large 1. Logical Identities}
+\end{flushleft}
+
+
+
+%========= Problem 1 .===========
+\begin{enumerate}
+
+\begin{flushleft}
+{\large 1. \neg (p \rightarrow(q \rightarrow p))}
+\end{flushleft}
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+\large 1. \neg (p \rightarrow(q \rightarrow p))\\
+\large 2. \neg (\neg p \lor (\neg q \lor p))  - Implication \\
+\large 3. \neg(\neg p) \land \neg(\neg q \lor p) - Demorgan \\
+\large 4. \neg (\neg p) \land \neg(\neg q) \land \neg p - Demorgan \\
+\large 5. p \land q \land \neg p - Double.Negation\\
+\large 6. p \land \neg p \land q - rearranged \\
+\end {itemize}
+\large We know \neg p \land p \equiv False\\
+\large also \hspace{.2cm}False \land q \\
+\large \therefore False \equiv q\\ 
+
+\end {enumerate}
+%========= Problem 2 .===========
+\begin{enumerate}
+
+\begin{flushleft}
+{\large 2. \neg((p\land q) \rightarrow (q\lor p))}
+\end{flushleft}
+
+   
+\begin{itemize}
+
+\item \textbf{Solution}\\
+\large 1. \neg((p\land q) \rightarrow (q\lor p))\\
+\large 2. \neg( p \land q)\lor(q \lor p) -Implication\\
+\large 3. \neg p \lor \neg q \lor (q \lor p) - Demorgan\\
+\large 4. (\neg p \lor p) \lor (\neg q \lor q) - Associative \\
+\end {itemize} 
+We know p \lor \neg p \equiv T \\
+\therefore True \equiv True \\
+
+\end {enumerate}
+%-----------        ----------- 
+%----------- PART 2 ----------- 
+%-----------        ----------- 
+
+\begin{flushleft}
+{\Large 2. Logical Consequence}
+\end{flushleft}
+
+
+%========= Problem 1 .===========
+\begin{enumerate}
+
+\begin{flushleft}
+{\large 1. Jimmy is smart\\
+\large \hspace{.4cm} Smart people are rich\\
+\large\noindent\rule{5cm}{0.4pt} \\
+\large Jimmy is rich}
+\end{flushleft}
+\end {enumerate}
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+\large 1. Jimmy is smart \\
+\large 2. Jimmy \rightarrow Smart \\
+\large 3.\hspace{.2cm} Smart\hspace{.2cm} people\hspace{.2cm} are\hspace{.2cm} rich  \\
+\large 4.\hspace{.2cm}Smart \rightarrow Rich \\
+\large 5.\hspace{.2cm}Jimmy \rightarrow Rich \\
+
+\end {itemize}
+
+
+%========= Problem 2 .===========
+\begin{enumerate}
+
+\begin{flushleft}
+{\large 2. Islands are surrounded by water \\
+\large \hspace{.4cm} Puerto Rico is surrounded by water \\
+\large\noindent\rule{7cm}{0.4pt} \\
+\large Puerto Rico is an island}
+\end{flushleft}
+\end {enumerate}
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+\large 1.\hspace{.2cm}Islands are surrounded by water \\
+\large 2.\hspace{.2cm}Island \rightarrow Surrounded\hspace{.2cm} by \hspace{.2cm}water \\
+\large 3.\hspace{.2cm}Puerto \hspace{.2cm}Rico\hspace{.2cm} is\hspace{.2cm} surrounded \hspace{.2cm}by \hspace{.2cm}water \\
+\large 4.\hspace{.2cm}Puerto Rico \rightarrow Surrounded by water \\
+\large 5.\hspace{.2cm}Puerto Rico \rightarrow Island
+
+\end {itemize}
+
+
+
+
+%-----------        ----------- 
+%----------- Part 3 ----------- 
+%-----------        ----------- 
+
+
+
+\begin{flushleft}
+{\Large 3. Translating English Sentences into Formulas}\\
+\large \hspace{1cm}S(x): x is a student in CSE015\\
+\large \hspace{1cm}M(x): x plays a musical instrument\\
+\large \hspace{1cm}Domain: Set of all people
+
+\end{flushleft}
+
+% =========== Number 1 =========== 
+\large 1. Not every student in CSE015 plays a musical instrument.\\
+
+\item\hspace{2cm} \textbf{Solution:}
+\neg (\forall x(S(x) \rightarrow M(x)))\\
+
+
+% =========== Number 2 =========== 
+
+
+\large 2. A person is either a student in CSE015 or plays a musical instrument, but not both..\\
+
+\item \hspace{2cm} \textbf{Solution:}
+\exists x(S(x) \oplus M(x))\\
+
+% =========== Number 3 =========== 
+
+
+\large 3. There exists at least one student in CSE015 who does not play a musical instrument..\\
+
+\item \hspace{2cm} \textbf{Solution:}
+\exists((S(x)\land \neg M(x))\\
+
+
+
+%-----------        ----------- 
+%----------- Part 4 ----------- 
+%-----------        ----------- 
+
+\begin{flushleft}
+{\Large 4. Logical Equivalence }
+\end{flushleft}
+
+\begin{enumerate}
+
+\begin{flushleft}
+{\large \forall x(A(x) \land B(x)) \equiv \forall x(A(x)\rightarrow B(x))}
+\end{flushleft}
+\end {enumerate}
+
+
+
+
+ \hspace{7.2cm} \textbf{Solution}\\
+\begin{displaymath}
+\begin{array}{|c|c|c|c|}
+A(x) & B(x) & A(x) \land B(x) & A(x) \rightarrow B(x) \\ 
+T & T & T & T \\
+T & F & F & F \\
+F & T & F & T \\
+F & F & F & T \\
+\end{array}
+\end{displaymath}
+
+ \hspace{6cm} \large A(x)\land B(x) \neq A(x) \rightarrow B(x)\\
+
+
+\pagebreak
+
+%-----------        ----------- 
+%----------- Part 5 ----------- 
+%-----------        ----------- 
+
+\begin{flushleft}
+{\Large 5. Nested Quantifiers  }
+\end{flushleft}
+
+\begin{enumerate}
+
+\begin{flushleft}
+{\Large A(x,y) is the statement xy=0;\\
+\Large B(x,y) is the statement x+y = 0.\\}
+\end{flushleft}
+\end {enumerate}
+
+
+
+%======== part a =========
+\begin{itemize}
+\Large a. \exists x \forall yA(x,y)\\
+\\
+\item  \hspace{.2cm} \textbf{Solution:}\\
+\Large if \hspace{.2cm} x = 0\\
+\Large then \hspace{.2cm}\forall yA(x,y) \equiv True\\
+\Large \therefore True\\
+\end{itemize}
+\\
+\\
+
+%======== part b =========
+\begin{itemize}
+\Large b. \exists x \forall yA(x,y)\\
+\\
+\item  \textbf{Solution:}\\
+\Large \exists x \exists yB(x,y)\\
+\Large $for y=-x$\\
+\Large $if y = 2, then x = -2$\\
+\Large $then B(x,y)$ \equiv$ True$
+
+\end{itemize}
+\\
+\\
+%======== part c =========
+\begin{itemize}
+\Large c. \forall x \exists yA(x,y)\\
+\\
+\item  \hspace{.2cm} \textbf{Solution:}\\
+\Large $if  y = 0$\\
+\Large $then $ \forall $xA(x,y)$ \equiv $True$\\
+\Large \therefore $True$\\
+\end{itemize}
+\\
+\\
+
+%======== part d =========
+\begin{itemize}
+\Large d. \exists x \forall y(A(x,y) \land B(x,y))\\
+\\
+\item  \textbf{Solution:}\\
+\end{itemize}
+\Large A(x,y) is true true, when x=0, y=0 or x and y=0\\
+\Large B(x,y) is true true, when x=0, y=0 or x=-y\\
+\Large however when x=-y, A(x,y) \neq $true$ \\
+\Large $but this is not $ \forall $y$\\
+\Large \therefore \exists x \forall y(A(x,y) \land B(x,y)) \equiv False\\
+\\
+\\
+
+
+%======== part e =========
+\begin{itemize}
+\Large e. \exists x \forall y(A(x,y) \land \neg B(x,y))\\
+\\
+\item  \textbf{Solution:}\\
+\large $for x or y = 0, then A(x,y) and $ \neg  $B(x,y)$ \equiv $True$\\
+\large \therefore \exists x \forall y(A(x,y) \land \neg B(x,y)) \equiv True \\
+
+
+
+\end{itemize}
+
+\\
+\\
+
+
+
+\end{document} 
