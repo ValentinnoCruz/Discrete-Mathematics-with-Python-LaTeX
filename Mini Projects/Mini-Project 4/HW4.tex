@@ -1,0 +1,573 @@
+\documentclass[11pt]{article}
+\documentclass[11pt]{article}
+\documentclass{article}
+\usepackage{libertine}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[makeroom]{cancel}
+
+% To produce a letter size output. Otherwise will be A4 size.
+\usepackage[letterpaper]{geometry}
+% To produce a letter size output. Otherwise will be A4 size.
+\usepackage[letterpaper]{geometry}
+
+% For enumerated lists using letters: a. b. etc.
+\usepackage{enumitem}
+
+\topmargin -.5in
+\textheight 9in
+\oddsidemargin -.25in
+\evensidemargin -.25in
+\textwidth 7in
+\usepackage{pifont}
+
+\begin{document}
+
+
+
+
+
+\begin{center}
+    {\Large Valentinno Cruz\\
+    Homework Assignment 4\\
+    March. 31st, 2021\\}
+
+\end{center}
+
+%-----------        ----------- 
+%----------- Part 1 ----------- 
+%-----------        ----------- 
+
+
+\begin{flushleft}
+{\Large 1. Functions}
+\end{flushleft}
+
+
+
+
+\begin{enumerate}
+
+\begin{flushleft}
+{\large 1. Is $\mathnormal{f}$ a function from $\mathbb{ R}$ 
+to $\mathbb{ R}$ if}\\
+\end{flushleft}
+
+
+
+%========= Problem A .===========
+
+
+\large (a) $\mathnormal{f}$(x) = \textpm \sqrt{(x^2+1)}?\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large This is not a function because it is not \\
+\large uniquely assigned to the point $x \in  \mathbb{ R}$ \\
+
+\end {itemize}
+\end {enumerate}
+
+
+%========= Problem B .===========
+\begin{enumerate}
+
+\begin{flushleft}
+\end{flushleft}
+
+\large (b) $\mathnormal{f}$(x) = 1/$x$\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large This is not a function from $\mathbb{ R}$ to $\mathbb{ R}$ \\
+\large because for the element $x$ = 0, there is no image \\
+
+\end {itemize}
+\end {enumerate}
+
+
+
+
+%========= Problem C .===========
+\begin{enumerate}
+
+\begin{flushleft}
+\end{flushleft}
+
+\large (c) $\mathnormal{f}$(x) = $x-x^2$\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large This is not a function from $\mathbb{ R}$ to $\mathbb{ R}$ \\
+\large because $x=0$ and $x=1$ are both mapped to element 0 \\
+\large $\therefore $ it's condition is not unique\\
+\end {itemize}
+\end {enumerate}
+
+
+
+\pagebreak
+
+
+%-----------        ----------- 
+%----------- Part 2 ----------- 
+%-----------        ----------- 
+
+
+
+
+
+\begin{enumerate}
+
+\begin{flushleft}
+{\large 2. Find the domain and range of these functions. Note that in each case, to find the domain, determine
+the set of elements assigned values by the function.}\\
+\end{flushleft}
+
+
+%========= Problem A .===========
+
+\large (a) The function that assigns to each positive integer the largest perfect square not exceeding this
+integer.\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large Domain = $\mathbb{N}$, all positive integers.\\
+\large Range = set of all perfect squares.\\
+\large - $\mathnormal{f}$ is not one to one because
+if we take \\
+\large - $\mathnormal{f}$(2)=2 and$\mathnormal{f}$(3)=2,
+ the largest perfect sq is $\leq$ 3\\
+ \large - so we can say the elements have the same image\\
+ \large $\therefore$ $\mathnormal{f}$ is onto\\
+
+\end {itemize}
+\end {enumerate}
+
+
+%========= Problem b .===========
+\begin{enumerate}
+
+\begin{flushleft}
+\end{flushleft}
+
+
+\large (b) The function that assigns to each bit string the number of ones in the string minus the number
+of zeros in the string.\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large $\mathnormal{f}$(x) = (number of 1's in string) - (number of 0's in string)\\
+\large ex. $\mathnormal{f}$(1100) = 2-2 = 0\\
+\large Domain = set of all strings\\
+\large Range = set of all integers ($\mathbb{Z})$\\
+\large - $\mathnormal{f}$ is not one to one because
+if we take  $\mathnormal{f}$(1100) = 0 and $\mathnormal{f}$(10) = 0\\
+\large - Different elements give us the same image\\
+\large $\therefore$ $\mathnormal{f}$ is onto\\
+
+\end {itemize}
+\end {enumerate}
+
+
+%========= Problem c .===========
+\begin{enumerate}
+
+\begin{flushleft}
+\end{flushleft}
+
+
+\large (c) The function that assigns to each bit string twice the number of zeros in that string.\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large $\mathnormal{f}$(x) = 2*number of zeros\\
+\large ex. $\mathnormal{f}$(100) = 2*2=4\\
+\large Domain = set of all binary strings\\
+\large Range = $\{2*n \colon n\in \{1,2, \dots \}\}$\\
+\large .\hspace{1.1cm}= set of all even numbers\\
+\large - $\mathnormal{f}$ is not one to one because
+if we take \\
+\large $\mathnormal{f}$(001) = 2*2 = 4 and 
+$\mathnormal{f}$(100) = 2*2 = 4\\
+\large - we get the same image with different elements\\
+\large $\therefore$ $\mathnormal{f}$ is onto\\
+
+\end {itemize}
+\end {enumerate}
+
+
+
+
+
+
+
+%========= Problem d .===========
+\begin{enumerate}
+
+\begin{flushleft}
+\end{flushleft}
+
+
+\large (d) The function that assigns the number of bits left over when a bit string is split into bytes (which
+are blocks of 8 bits).\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large $\mathnormal{f}$(x) = the num of bits of a string
+left over when a bit string is split into bytes\\
+\large ex. $\mathnormal{f}$(100001101) = 0\\
+\large $\mathnormal{f}$(0000000000) = 2\\
+\large Domain = set of all binary strings\\
+\large Range = set of all non-negative integers\\
+\large .\hspace{1.1cm}= \{0,1,2,3, \dots \}\\
+\large - $\mathnormal{f}$ is not one to one because
+if we take \\
+\large - $\mathnormal{f}$(01) = 2 and 
+$\mathnormal{f}$(10) = 2\\
+\large - we get the same image with different elements\\
+\large $\therefore$ $\mathnormal{f}$ is onto\\
+
+\end {itemize}
+\end {enumerate}
+
+%========= Problem e .===========
+\begin{enumerate}
+
+\begin{flushleft}
+\end{flushleft}
+
+
+\large (e) The function that assigns to a bit string the number of one bits in the string.
+For example, the domain for the question is the set of bit strings (of any length). (Remember, a
+bit string is a string made up of just 0’s and 1’s.) The range is the set of nonnegative integers:
+{0, 1, 2, ...}. That is, the number of 1’s in a bit string can be 0, 1, 2, ....\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large $\mathnormal{f}$(x) = the num 1's in $x$\\
+\large ex. $\mathnormal{f}$(00000) = 0\\
+\large .\hspace{.5cm}$\mathnormal{f}$(110) = 2\\
+\large Domain = set of all binary strings\\
+\large Range = set of all non-negative integers\\
+\large .\hspace{1.1cm}= \{0,1,2,3, \dots \}\\
+\large - $\mathnormal{f}$ is not one to one because
+if we take \\
+\large - $\mathnormal{f}$(01) = 1 and 
+$\mathnormal{f}$(10) = 1\\
+\large - we get the same image with different elements\\
+\large $\therefore$ $\mathnormal{f}$ is onto\\
+
+\end {itemize}
+\end {enumerate}
+
+
+
+
+
+\pagebreak
+
+
+
+
+%-----------        ----------- 
+%----------- Part 3 ----------- 
+%-----------        ----------- 
+
+
+
+
+
+\begin{enumerate}
+
+\begin{flushleft}
+{\large 3. Determine whether the function $\mathnormal{f}$ : $\mathbb{Z}$ × $\mathbb{Z}$ ! $\mathbb{Z}$ is onto if}\\
+\end{flushleft}
+
+
+%========= Problem A .===========
+
+\large (a) $\mathnormal{f}$(m,n) =$m^2-n^2$\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large - let $y \in $\mathbb{ Z }$\mid$\mathnormal{ f}$(m,n) = y$\\
+\large - so we have $m^2-n^2=y$\\
+\large - if n = 0 we get, $m^2 = y $\longrightarrow $ m = \textpm \sqrt{y}$ $\oplus$ $\mathbb{Z}$\\
+\large - this tells us the preimage of y is nonexistent in $\mathbb{Z}$ × $\mathbb{Z}$\\
+\large $\therefore$ $\mathnormal{f}$ is onto\\
+
+
+\end {itemize}
+\end {enumerate}
+
+%========= Problem b .===========
+\begin{enumerate}
+
+\begin{flushleft}
+\end{flushleft}
+
+
+\large (b) $\mathnormal{f}$(m,n) = m + n + 1\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large - let p $\in \mathbb{ Z }$ $\mid$ $\mathnormal{f}$(m,n) = p\\
+\large - We can say that $p = m + n + 1$ \\
+\large - Which implies that each of the elements of the given\\
+\large co-domain set $\mathbb{ Z }$ has a preimage within the domain $\mathbb{Z}$ × $\mathbb{Z}$\\
+\large $\therefore$ $\mathnormal{f}$ is onto\\
+
+
+\end {itemize}
+\end {enumerate}
+
+%========= Problem c.===========
+\begin{enumerate}
+
+\begin{flushleft}
+\end{flushleft}
+
+
+\large (c) $\mathnormal{f}$(m,n) =$\lvert m  \rvert$ - $\lvert n \rvert$ \\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large let $y \in \mathbb{ Z }$ $\mid$ $\mathnormal{f}$(m,n) = y\\
+\large - We can say that $y = \lvert m  \rvert$ - $\lvert n \rvert$\\
+\large - Which illustrates that y has a preimage within $\mathbb{Z}$ × $\mathbb{Z}$\\
+\large - We know that y is an arbitrary value, which means each\\ element in co-domain set $\mathbb{ Z}$ has a preimage in
+$\mathbb{Z}$ × $\mathbb{Z}$\\
+\large $\therefore$ $\mathnormal{f}$ is onto\\
+
+
+\end {itemize}
+\end {enumerate}
+
+
+\pagebreak
+
+
+
+%========= Problem d.===========
+\begin{enumerate}
+
+\begin{flushleft}
+\end{flushleft}
+
+
+\large (d) $\mathnormal{f}$(m,n) =$\lvert m  \rvert$ - $\lvert n \rvert$ \\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large - let $y \in \mathbb{ Z }$ be an element in codomain set in  $\mathbb{Z}$ \mind that $\mathnormal{f}$(m,n) = y\\
+\large - which means that $m^2 - 4 = y$\\
+\large $m^2 = y + 4$\\
+\large $m = \textpm \sqrt{y+4}$ $\notin$ $\mathbb{Z}$ × $\mathbb{Z}$\\
+\large - so $y$ has no preimage in the domain of $\mathbb{Z}$ × $\mathbb{Z}$\\
+\large $\therefore$ $\mathnormal{f}$ is onto\\
+
+
+\end {itemize}
+\end {enumerate}
+
+
+
+
+
+%-----------        ----------- 
+%----------- Part 4 ----------- 
+%-----------        ----------- 
+
+
+
+
+
+\begin{enumerate}
+
+\begin{flushleft}
+{\large 3. Consider these functions from the set of students in a discrete mathematics class. State under what
+conditions is the function one-to-one if it assigns to a student the following things below. Also state
+how likely this is in practice.}\\
+\end{flushleft}
+
+
+%========= Problem A .===========
+
+\large (a) Mobile phone number.\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large If each student is assigned a unique phone number than the function is considered one-to-one.\\
+\large so no two students must have the same number.
+\large which is the case since not one person can have the same number, but numbers can be reused for new users\\
+
+
+\end {itemize}
+\end {enumerate}
+
+%========= Problem b .===========
+\begin{enumerate}
+\begin{flushleft}
+\end{flushleft}
+
+
+\large (b) Student identification number.\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large If each student has a unique Student ID number, than the function is one-to-one.\\
+\large  Because this is used to identify an individual numbers must not and are not the same to avoid confusion\\
+
+
+\end {itemize}
+\end {enumerate}
+
+
+%========= Problem c .===========
+\begin{enumerate}
+\begin{flushleft}
+\end{flushleft}
+
+
+\large (c) Final grade in the class.\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large If each student has a unique final grade than the function is one-to-one\\
+\large so no two students can have the same grade\\
+\large this is rarely the case because there are only 4 grades to choose from and classrooms have many students\\
+
+\end {itemize}
+\end {enumerate}
+
+
+%========= Problem d.===========
+\begin{enumerate}
+\begin{flushleft}
+\end{flushleft}
+
+
+\large (d) Home town.\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large If each student is from a unique home town, than the function is one-to-one.\\
+\large this is not the case at all because not everyone can be from seperate towns. \\
+
+\end {itemize}
+\end {enumerate}
+
+
+
+
+
+%-----------        ----------- 
+%----------- Part 5 ----------- 
+%-----------        ----------- 
+
+
+
+
+
+\begin{enumerate}
+
+\begin{flushleft}
+{\large 5. Determine whether each of these functions is a bijection from $\mathbb{R}$ to $\mathbb{R}$}\\
+\end{flushleft}
+
+
+%========= Problem A .===========
+
+\large (a) $\mathnormal{f}$(x) = $-3x + 4$\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large - let $x_1$ and $x_2 \in \mathbb{R}$ \mid $ x_1 \neq x_2$\\
+\large - we let  $\mathnormal{f}$ $(x_1) = -3x_1+4$ and $\mathnormal{f}$ $(x_2) = -3x_2+4$\\
+\large - $\mathnormal{f}(x_1) \neq \mathnormal{ f}(x_2)$\\
+\large - $-3x_1 \neq -3x_2$\\
+\large - Since $x_1 \neq x_2$ \\
+\large $\therefore \mathnormal{f}(x)$ is one-to-one\\
+\large - Now $\forall y \in \mathbb{R}$ and $\exists x = 4-y/3 \in \mathbb{R}$ \\
+\large Such that $ \mathnormal{f}(x) = y$\\
+\large - we know $\mathnormal{f}(4-y/3) = y$\\
+\large - Then $ \mathnormal{f}(x)$ is onto\\
+\large $\therefore \mathnormal{f}$ is a Bijection from $\mathbb{R}$ to $\mathbb{R}$\\
+
+
+\end {itemize}
+\end {enumerate}
+
+
+
+%===================== Problem b .=============================
+\begin{enumerate}
+\begin{flushleft}
+\end{flushleft}
+\large (b) $\mathnormal{f}$(x) = $-3^2+7$\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large - $\mathnormal{f}$(x) is not a one-to-one function\\
+\large - If we take $\mathnormal{f}$(1) = 4 = $\mathnormal{f}$(-1)\\
+\large - and 1 $\neq$-1 so it is not one-to-one\\
+\large $\therefore \mathnormal{f}(x)$ is not a Bijection\\
+
+
+\end {itemize}
+\end {enumerate}
+
+
+
+%===================== Problem c .=============================
+\begin{enumerate}
+\begin{flushleft}
+\end{flushleft}
+
+\large (c) $\mathnormal{f}$(x) = (x+1)/(x+2)\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large - This is not a function because there is not \\
+\large image of $x = -2 \in \mathbb{R}$\\
+\large - so it cant be one-to-one nor onto\\
+\large $\therefore \mathnormal{f} (x)$ is not a Bijection\\
+
+
+\end {itemize}
+\end {enumerate}
+
+
+%===================== Problem d .=============================
+\begin{enumerate}
+\begin{flushleft}
+\end{flushleft}
+
+
+\large (c) $\mathnormal{f}(x) = x^3$\\
+
+\begin{itemize}
+\item \textbf{Solution}\\
+\large - Let $\mathnormal{f}(x_1) \neq \mathnormal{f}(x_2)$\\
+\large - Also let $x_1$ and $x_2$ $\in \mathbb{R}$\\
+\large - We have $x_1^3 \neq x_2^3$\\
+\large - Then $x_1 \neq x_2$\\
+\large - So we can say $\mathnormal{f}(x)$ is one-to-one\\
+\large - Now $\forall y \in \mathbb{R}$ and $\exists x = y^1/3 \in \mathbb{R}$ \\
+\large - such that $\mathnormal{f}(x) = y$\\
+\large - Then $\mathnormal{f}(x) = \mathnormal{f}(y^1/3)$ \longrightarrow $(y^1/3)^3$\\
+\large - So $\mathnormal{f}(x) = y$ which makes it onto\\
+\large $\therefore \mathnormal{f}(x)$ is a Bijection\\
+
+
+\end {itemize}
+\end {enumerate}
+
+
+
+
+
+
+
+\end{document} 
