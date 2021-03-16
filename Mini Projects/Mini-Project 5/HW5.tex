@@ -1,0 +1,317 @@
+\documentclass[11pt]{article}
+\documentclass[11pt]{article}
+\documentclass{article}
+\usepackage{libertine}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[makeroom]{cancel}
+\usepackage{indentfirst}
+
+% To produce a letter size output. Otherwise will be A4 size.
+\usepackage[letterpaper]{geometry}
+% To produce a letter size output. Otherwise will be A4 size.
+\usepackage[letterpaper]{geometry}
+
+% For enumerated lists using letters: a. b. etc.
+\usepackage{enumitem}
+
+\topmargin -.5in
+\textheight 9in
+\oddsidemargin -.25in
+\evensidemargin -.25in
+\textwidth 7in
+\usepackage{pifont}
+
+\begin{document}
+
+
+
+
+
+\begin{center}
+    {\Large Valentinno Cruz\\
+    Homework Assignment 5\\
+    April. 21st, 2021\\}
+
+\end{center}
+
+%-----------             ----------- 
+%----------- ALGORITHMS  ----------- 
+%-----------             ----------- 
+
+\begin{flushleft}
+{\Large 1. Algorithms}
+\end{flushleft}
+
+
+
+%========= Problem 1 .===========
+
+
+\begin{enumerate}
+
+\begin{flushleft}
+{\large 1. Develop an algorithm that takes as input a list of n integers and finds the location of the last odd
+integer in the list or returns −1 if there are no odd integers in the list.}\\
+\end{flushleft}
+
+
+
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+\large 1. Declare int x as variable \\
+\large 2. Get input for x\\
+\large 3. algorithm takes list and size x\\
+\large 4. Algorithm input(list,x)\\
+\large 5. set index to -1 \\
+\large 6. Declare an array of x ints\\
+\large 7. loop through list\\
+\large 8. for i from 0 to n-1\\
+\large \hspace*{10mm} check if number in index i is odd. yes\\
+\large \hspace*{5mm} end for loop \\
+\large 9. for i = 1 to x\\
+\large \hspace*{10mm} if list[i] \%2 == 1 \\
+\large \hspace*{15mm} set index = i\\
+\large \hspace*{10mm} end if \\
+\large \hspace*{5mm}end for\\
+\large 10. return index\\
+
+
+\end {itemize}
+\end {enumerate}
+
+
+%========= Problem 2 .===========
+
+
+\begin{enumerate}
+
+\begin{flushleft}
+{\large 2. Develop an algorithm that inserts an integer a in the appropriate position into the list $x_1, x_2, ..., x_n$ of
+integers that are in decreasing order.}\\
+\end{flushleft}
+
+
+
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+\large 1. declare a list an array of x ints\\
+\large 2. for i = 1 to x\\
+\large \hspace*{10mm} get the input of the ith index of the list\\
+\large \hspace*{5mm} end for\\
+\large 4. declare an int z and get int of z\\
+\large 5. set a flag to false\\
+\large \hspace*{10mm} if z $\geq$ list[i] \\
+\large \hspace*{15mm} insert z at the position i on the list\\
+\large \hspace*{15mm} assign flag to true \\
+\large \hspace*{15mm} otherwise break loops\\
+\large \hspace*{10mm} end if \\
+\large \hspace*{5mm} end for\\ 
+\large 6. if the flag is false \\
+\large \hspace*{10mm} put z at last position of the list \\
+\large \hspace*{5mm} end if\\
+
+\end {itemize}
+\end {enumerate}
+
+
+\pagebreak
+
+
+
+
+%-----------                     ----------- 
+%----------- Order of Complexity ----------- 
+%-----------                     ----------- 
+
+\begin{flushleft}
+{\Large 2. Order of Complexity}
+\end{flushleft}
+
+
+
+%========= Problem 1 .===========
+
+
+\begin{enumerate}
+
+\begin{flushleft}
+{\large 1. State whether each of these functions is or is not $O(x^2)$. If you state that the function is not $O(x^2)$
+then that is all you need to do. If you state that the function is $O(x^2)$ then find witnesses $C$ and $k$
+such that $f(x) \leq Cg(x)$ where $g(x) = x^2$ when $x > k.$}\\
+\end{flushleft}
+
+
+%============ part A ============ 
+\large (a) $f(x) = 17x + 11$\\
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+\large  $f(x) = 17x+11$ which is $O(x)$ this gives us $O(n^2)$\\
+\large  this means it is $O(n^2)$\\
+\large which means we get $C$=28 and $K$ =1\\
+\large \therefore $ 17x+11 \leq 28*x^2$ for all $x > 1$\\
+
+
+\end {itemize}
+
+%================================
+%============ part B ============ 
+%================================
+
+\large (b) $f(x) = xlog_2 x$\\
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+\large  We have $O(xlnx)$\\
+\large this means we have $O(x^2)$\\
+\large we can assign $C$ and $K$ to 1\\
+\large \therefore $ xlnx \leq 1*x^2$ for every $x \geq 1$\\
+
+
+\end {itemize}
+
+
+%================================
+%============ part C ============ 
+%================================
+
+\large (c) $f(x) = x^4/2$\\
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+\large  This is $O(x^4)$ not $O(x^2)$\\
+\large $\therefore $ not possible\\
+
+
+
+\end {itemize}
+\end {enumerate}
+
+%================================
+%========= BIG-O .===============
+%================================
+
+
+\begin{enumerate}
+
+\begin{flushleft}
+{\large 2. Give a big-$O$ estimate (in terms of $n$) for the number of additions used in this segment of an algorithm}\\
+\end{flushleft}
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+\large the value of $i$ will iterate from $1$ till $n = O(n)$\\
+\large so for each value of $i$ the $j$ value will iterate from $0$ to $n = O(n)$\\
+\large $\therefore$ the complexity is $O(n)*O(n)$\\
+\large which gives us $O(n^2)$\\
+
+
+\end {itemize}
+
+
+
+\end {enumerate}
+
+
+
+
+\pagebreak 
+
+%========= Problem 3 .===========
+
+
+\begin{enumerate}
+
+\begin{flushleft}
+{\large 3. Suppose you have a computer which takes $10^−9$ seconds to perform a bit operation. What is the
+largest problem, in terms of $n$, that this computer can solve in one second using an algorithm that
+requires $f(n)$ bit operations if}\\
+\end{flushleft}
+
+
+%============ Problem A ============ 
+\large (a) $f(n) = log_2 n$\\
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+\large  $f(n) = log_2 n$ \\
+\large this means $log_2 n \leq 10^9$\\
+\large so $2^{log_2n}$ $\leq$ $2^{10^9}$\\
+\large $\therefore n = 2^{10^9}$\\
+\end {itemize}
+
+
+%============ Problem B ============ 
+\large (b) $f(n) = n$\\
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+\large  $f(n) = log_2 n$ \\
+\large this means $n \leq 10^9$\\
+
+
+\end {itemize}
+
+
+%============ Problem C ============ 
+\large (c) $f(n) = 2^n$\\
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+\large  $f(n) = 2^n$\\
+\large which means $2^n \leq 10^9$\\
+\large so $log 2^n \leq log 10^9$\\
+\large $nlog2 \leq log10^9$\\
+\large $n \leq 9log 10/log 2$ \\
+\large which is $9/log2 \simeq 30$\\
+\large $\therefore n < 30$ \\
+
+
+\end {itemize}
+
+
+%============ Problem D ============ 
+\large (d) $f(n) = n!$\\
+
+
+\begin{itemize}
+
+\item \textbf{Solution}\\
+\large  $n! \leq 10^9$\\
+\large we know that $11! = 39,916,800$ which is $\leq 10^9$\\
+\large so $12! = 479,001,300$ is $\leq 10^9$\\
+\large and $13! = 627,020,800$ which is $\geq 10^9$\\
+\large $\therefore n = 12$\\
+
+
+\end {itemize}
+
+
+
+
+
+
+
+
+\end {enumerate}
+\end{document} 
