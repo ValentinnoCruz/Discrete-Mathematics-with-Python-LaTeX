@@ -20,6 +20,8 @@ time requirements.<br />
 5. Applications: Students will learn about the applications of discrete mathematics
 to computer science and data networking, and other areas, like chemistry,
 biology, linguistics, geography, business, and the Internet.<br />
+
+#Course Topics<br />
 - Propositional and predicate logic<br />
 - Inference and proof techniques<br />
 - Sets<br />
