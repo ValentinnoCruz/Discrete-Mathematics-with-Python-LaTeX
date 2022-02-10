@@ -1,4 +1,4 @@
-# CSE-15
+# Discrete Mathematics
 Discrete Mathematics with Python &amp; LaTeX
 This course covers the basic concepts of discrete mathematics used in computer
 science and other disciplines that involve formal reasoning. The topics include
@@ -21,7 +21,7 @@ time requirements.<br />
 to computer science and data networking, and other areas, like chemistry,
 biology, linguistics, geography, business, and the Internet.<br />
 
-#Course Topics<br />
+# Course Topics<br />
 - Propositional and predicate logic<br />
 - Inference and proof techniques<br />
 - Sets<br />
