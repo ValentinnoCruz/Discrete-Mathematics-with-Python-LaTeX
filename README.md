@@ -19,4 +19,17 @@ works properly, and the analyze its performance based on computer memory and
 time requirements.<br />
 5. Applications: Students will learn about the applications of discrete mathematics
 to computer science and data networking, and other areas, like chemistry,
-biology, linguistics, geography, business, and the Internet.
+biology, linguistics, geography, business, and the Internet.<br />
+- Propositional and predicate logic<br />
+- Inference and proof techniques<br />
+- Sets<br />
+- Functions<br />
+- Sequences and series<br />
+- Recursion<br />
+- Counting<br />
+- Permutations and combinations<br />
+- Recurrence<br />
+- Probability<br />
+- Relations<br />
+- Graphs<br />
+- Boolean algebra<br />
